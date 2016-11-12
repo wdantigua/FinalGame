@@ -3,13 +3,19 @@ using System.Collections;
 
 public class UIDisplay : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	colorDial()
+	{
+		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+
+	ColorDial()
+	{
+
 	}
-}
+
+
+	pcDies()
+	{
+
+	}

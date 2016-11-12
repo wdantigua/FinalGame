@@ -3,13 +3,27 @@ using System.Collections;
 
 public class Movement : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	Transform player;
+
+
+	MoveUp()
+	{
+		player.position += player.up 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+	MoveDown()
+	{
+		player.position -= player.up 
+	}	
+
+	MoveLeft()
+	{
+		player.position -= player.right 
+	}	
+
+	MoveRight()
+	{
+		player.position += player.right 
+	}	
+
 }
