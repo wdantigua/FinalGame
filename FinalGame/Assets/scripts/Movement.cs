@@ -5,7 +5,7 @@ public class Movement : MonoBehaviour {
 	
 	public int speed;
 
-	public void Start()
+	public Movement()
 	{
 		speed = 8;
 	}

@@ -3,11 +3,8 @@ using System.Collections;
 
 public class Controller : Movement {
 	
-	// Use this for initialization
-	void Start () {
-		speed = 390;
-		base.Start (); // Start from Movement
-	}
+
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -21,25 +18,25 @@ public class Controller : Movement {
 		if (Input.GetKey (KeyCode.DownArrow)) 
 
 		{
-
+			MoveDown();
 		}
 
 		if (Input.GetKey (KeyCode.LeftArrow)) 
 
 		{
-
+			MoveLeft();
 		}
 
 		if (Input.GetKey (KeyCode.RightArrow)) 
 
 		{
-
+			MoveRight();
 		}
 
 		if (Input.GetKey (KeyCode.A)) 
 
 		{
-
+			
 		}
 
 		if (Input.GetKey (KeyCode.S)) 
