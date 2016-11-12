@@ -1,33 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public static class Movement : MonoBehaviour {
+public class Movement : MonoBehaviour {
+	
+	public int speed;
 
-	Transform player;
-
-	Movement()
+	public void Start()
 	{
-		
+		speed = 8;
 	}
 
-	void  MoveUp()
+	public void MoveUp()
 	{
-		 player.position += player.up; 
+		transform.position += transform.up * Time.deltaTime * speed; 
 	}
 
-	void MoveDown()
+	public void MoveDown()
 	{
-		player.position -= player.up ;
+		transform.position -= transform.up * Time.deltaTime * speed;
 	}	
 
-	void MoveLeft()
+	public void MoveLeft()
 	{
-		player.position -= player.right ;
+		transform.position -= transform.right * Time.deltaTime * speed;
 	}	
 
-	void MoveRight()
+	public void MoveRight()
 	{
-		player.position += player.right ;
+		transform.position += transform.right * Time.deltaTime * speed;
 	}	
 
 }
