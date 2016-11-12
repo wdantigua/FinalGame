@@ -1,29 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Movement : MonoBehaviour {
+public static class Movement : MonoBehaviour {
 
 	Transform player;
 
-
-	MoveUp()
+	Movement()
 	{
-		player.position += player.up 
+		
 	}
 
-	MoveDown()
+	void  MoveUp()
 	{
-		player.position -= player.up 
+		 player.position += player.up; 
+	}
+
+	void MoveDown()
+	{
+		player.position -= player.up ;
 	}	
 
-	MoveLeft()
+	void MoveLeft()
 	{
-		player.position -= player.right 
+		player.position -= player.right ;
 	}	
 
-	MoveRight()
+	void MoveRight()
 	{
-		player.position += player.right 
+		player.position += player.right ;
 	}	
 
 }
